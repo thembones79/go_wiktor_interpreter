@@ -8,23 +8,27 @@ type Token struct {
 }
 
 const (
-    ILLEGAL = "ILLEGAL"
-    EOF = "EOF"
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF"
 
-    // Identifiers + literals
-    IDENT = "IDENT" // add, foobar, x, y, ...
-    INT = "INT" // 123456
+	// Identifiers + literals
+	IDENT = "IDENT" // add, foobar, x, y, ...
+	INT   = "INT"   // 123456
 
-    // Operators
-    ASSIGN = "="
-    PLUS = "+"
+	// Operators
+	ASSIGN = "="
+	PLUS   = "+"
 
-    // Delimiters
+	// Delimiters
+	COMMA     = ","
+	SEMICOLON = ";"
 
+	LPAREN = "("
+	RPAREN = ")"
+	LBRACE = "{"
+	RBRACE = "}"
 
-
-
-
-
-
+	// Keywords
+	FUNCTION = "FUNCTION"
+	LET      = "LET"
 )
