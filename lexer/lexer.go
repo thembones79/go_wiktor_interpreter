@@ -28,7 +28,7 @@ func (l *Lexer) readChar() {
 func (l *Lexer) NextToken() token.Token {
 	var tok token.Token
 
-	switch l.ch {
+	switch string(l.ch) {
 	case "=":
 		tok = newToken(token.ASSIGN, l.ch)
 	case ";":
